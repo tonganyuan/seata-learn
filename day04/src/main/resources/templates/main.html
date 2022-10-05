@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main 页面</title>
+</head>
+<body>
+    <div id = "output"></div>
+</body>
+<script>
+    const http = new XMLHttpRequest();
+
+    const url = 'http://127.0.0.1:8080/test';
+
+    http.open("POST",url);
+    http.send();
+    http.onreadystatechange = (e) => {
+        document.getElementById("output").innerHTML = http.responseText;
+    }
+</script>
+
+</html>
