@@ -1,0 +1,5 @@
+server:
+  port: 8080
+client:
+  id: a4348e22832b524aca27
+  secrets: ff3540193310713d6c594bcad8b044583f28f352
